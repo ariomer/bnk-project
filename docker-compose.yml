@@ -3,7 +3,7 @@ services:
   ui:
     image: "linn-bank-frontend"
     build:
-      contect: ./ui
+      context: ./ui
     container_name: ui
     depends_on:
       - app
