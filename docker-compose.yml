@@ -36,6 +36,11 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=bankingapi
     ports:
-      - "80:80"
+      - "5432:5432"
+    volumes:
+      - /db-data:/var/lib/postgresql/data/
     depends_on:
       - backend
+
+volumes:
+    db-data:
