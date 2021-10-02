@@ -39,8 +39,6 @@ services:
       - "5432:5432"
     volumes:
       - /db-data:/var/lib/postgresql/data/
-    depends_on:
-      - backend
 
 volumes:
     db-data:
