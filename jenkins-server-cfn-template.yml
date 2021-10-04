@@ -53,8 +53,8 @@ Resources:
   JenkinsServer:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-0947d2ba12ee1ff75
-      InstanceType: t2.medium
+      ImageId: ami-0d1bf5b68307103c2
+      InstanceType: t2.micro
       KeyName: !Ref KeyPairName
       IamInstanceProfile: !Ref JenkinsServerEC2Profile
       SecurityGroupIds:
