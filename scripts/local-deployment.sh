@@ -1,0 +1,1 @@
+docker-compase up -d
