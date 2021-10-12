@@ -1,8 +1,8 @@
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
-  myFirstPC:
+  KeyPairName:
     Description: Enter the name of your Key Pair for SSH connections.
-    Type: AWS::EC2::KeyPair::KeyName
+    Type: AWS::EC2::KeyPair::myFirstPC
     ConstraintDescription: Must one of the existing EC2 KeyPair
 Resources:  
   RoleEnablingEC2forECR:
