@@ -1,6 +1,9 @@
 package com.banking.api;
 
 import com.banking.api.filters.AuthFilter;
+import com.banking.api.filters.AuthFilter;
+import com.banking.api.filters.AuthFilter;
+import com.banking.api.filters.AuthFilter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
