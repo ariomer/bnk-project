@@ -59,9 +59,9 @@ pipeline {
 
      stage('Build Gradle') {
          echo "Build Project ..."
-         sh "./gradlew clean build"
-         echo "Pull out jar to workdir"
-         sh "cp ./build/libs/*.jar ."
+         withSonarQubeEnv() {
+			sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=test-sonarqube"
+		}
      }
 
      stage('Build Container Image And Run') {
