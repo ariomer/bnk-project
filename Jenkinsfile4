@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                git url: 'https://github.com/ariomer/bnk-project.git'
+                git branch: 'main', url: 'https://github.com/ariomer/bnk-project.git'
             }
         }
         stage('build && SonarQube analysis') {
