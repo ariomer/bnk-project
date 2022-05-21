@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build && SonarQube analysis') {
             steps {
-                withSonarQubeEnv() {
+                withSonarQubeEnv('sonarqube-container') {
                     // Optionally use a Maven environment you've configured already
                     // withMaven(maven:'Maven 3.5') {
                         sh 'mvn - f bnk-project/api/pom.xml clean package -DskipTests sonar:sonar'
